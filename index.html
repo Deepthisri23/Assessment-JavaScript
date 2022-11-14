@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title>Explore Freedom</title>
+</head>
+<body>
+    <section>
+        <header>
+            <div id="title">
+                <h1>Explore Freedom</h1>
+            </div>
+            <div id="nav">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Contant Us</a>
+            </div>
+
+        </header>
+        <main>
+            <h1>Booking Details</h1>
+            <div id="form">
+                <form name="myform"  action="newHTML.html" method="post">
+                <input type="radio" name="trip" id="Oneway" value="Oneway" onclick=" checkButton()">Oneway 
+                <input type="radio" name="trip" id="Roundtrip" value="Roundtrip" onclick=" checkButton()" >Roundtrip<br><br> 
+                From: <select name="fromdestination" id="fromlist" required >
+                    <option value=""></option>
+                    <option value="Adeliade">Adeliade</option>
+                    <option value="Brisbane">Brisbane</option>
+                    <option value="Perth">Perth</option>
+                    <option value="Sydney">Sydney</option>
+                    <option value="Melbourne">Mebourne</option>
+                    <option value="Tasmania">Tasmania</option>
+                </select>
+                To: <select name="todestination" id="tolist" required >
+                    <option value=""></option>
+                    <option value="Adeliade">Adeliade</option>
+                    <option value="Brisbane">Brisbane</option>
+                    <option value="Perth">Perth</option>
+                    <option value="Sydney">Sydney</option>
+                    <option value="Melbourne">Mebourne</option>
+                    <option value="Tasmania">Tasmania</option>
+                </select><br><br>
+                Departure: <input type="date" name="departuredate" id="departuredate" required ><span></span>
+                Return date: <input type="date" name="returndate" id="returndate" required><br><br> 
+                <h3>Number of passengers</h3>
+                Adults: <input type="number" name="=adults" id="adults"  min="1" required>
+                Children: <input type="number" name="=children" id="children" min="0">
+                <h4>Passenger1 details</h4>
+                Name: <input type="text" name="name" id="name" pattern="[a-zA-Z]{5,}" title="Name should have atleast 5 alphabets" >
+                Gender: <input type="radio" name="gender" id="Male" value="Male" >Male
+                <input type="radio" name="gender" id="Female" value="Female" >Female
+                Age: <input type="number" name="age" id="age" min="0">
+                <h4>Passenger2 details</h4>
+                Name: <input type="text" name="name" id="name" pattern="[a-zA-Z]{5,}" title="Name should have atleast 5 alphabets" >
+                Gender: <input type="radio" name="gender" id="Male" value="Male" >Male
+                <input type="radio" name="gender" id="Female" value="Female" >Female
+                Age: <input type="number" name="age" id="age" min="0">
+                <h4>Passenger3 details</h4>
+                Name: <input type="text" name="name" id="name" pattern="[a-zA-Z]{5,}" title="Name should have atleast 5 alphabets" >
+                Gender: <input type="radio" name="gender" id="Male" value="Male" >Male
+                <input type="radio" name="gender" id="Female" value="Female"  >Female
+                Age: <input type="number" name="age" id="age" min="0"><br><br>
+                Food type: <select name="foodtype" id="foodtype" required>
+                    <option value="Veg">Veg</option>
+                    <option value="Non-Veg">Non-Veg</option>
+                </select>
+                Travel class: <select name="travelclass" id="travelclass" required>
+                    <option value="Economy">Economy Class</option>
+                    <option value="First">First Class</option>
+                    <option value="Business">Business Class</option>
+                </select><br>
+                <h3>Payment Details:</h3>
+                Full Name: <input type="text" name="name" id="name" pattern="[a-zA-Z]{5,}" title="Name should have atleast 5 alphabets" onblur="validname()" required>
+                Email: <input type="email" name="myemail" id="email" onblur="Validmail()" required >
+                Mobile: <input type="number" name="mymobile" id="mobile" onblur="Valimob()" required><br><br>
+
+                <input type="submit" value="Submit">
+
+                </form>
+
+            </div>
+
+        </main>
+        <footer>
+            <img src="Images/facebook.png" width="40" height="40" /><span></span>
+            <img src="Images/twitter.jpg" width="40" height="40"/><span></span>
+            <img src="Images/youtube.jpg" width="40" height="40"/>
+        </footer>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
+</html>
